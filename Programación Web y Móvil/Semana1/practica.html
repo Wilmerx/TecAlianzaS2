@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Práctica de HTML</h1>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id = "tabla">
+            <h2>Tabla de Ejemplo</h2>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ana</td>
+                        <td>ana@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Carlos</td>
+                        <td>carlos@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Lucía</td>
+                        <td>lucia@gmail.com</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id = "formulario">
+            <h2>Formulario de Registro</h2>
+            
+           <form action="#" method="post">
+                <label for = "nombre">Nombre:</label>
+                <input type = "text" id = "nombre" required placeholder="Ingresa tu nombre"> 
+
+                <label for = "correo">Correo:</label>
+                <input type = "email" id = "correo" required placeholder="Ingresa tu correo">
+
+                <label for = "telefono">Teléfono:</label>
+                <input type = "tel" id = "telefono" required placeholder="Ingresa tu teléfono"> 
+
+                <label for = "fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type = "date" id = "fecha_nacimiento" required>
+
+                <label for = "color">Color Favorito:</label>
+                <input type = "color" id = "color" required>
+
+                <label for = "tipo_documento">Tipo de Documento:</label>
+                <select id = "tipo_documento" required>
+                    <option value=""</option>
+                    <option value="cc">CC</option>
+                    <option value="ti">TI</option>
+                    <option value="ce">CE</option>
+                </select>
+
+                <label for = "genero">Género:</label>
+                <input type = "radio" id = "masculino" name = "genero" value = "masculino">
+                <label for = "masculino">Masculino</label>
+                <input type = "radio" id = "femenino" name = "genero" value = "femenino">
+                <label for = "femenino">Femenino</label>
+                <input type = "radio" id = "otro" name = "genero" value = "otro">
+                <label for = "otro">Otro</label>
+
+                <label for = "intereses">Intereses:</label>
+                <input type = "checkbox" id = "Programación" name = "intereses" value = "programacion">
+                <label for = "Programación">Programación</label>
+                <input type = "checkbox" id = "Diseño" name = "intereses" value = "diseño">
+                <label for = "Diseño">Diseño</label>
+
+                <label for = "comentarios">Comentarios:</label>
+                <textarea id = "comentarios" rows="3" cols="20" placeholder="Escribe tus comentarios aquí"></textarea>
+
+                <button type = "submit">Enviar</button>
+            </form> 
+        </section>
+
+        <section id = "multimedia">
+            <h2>Elementos Multimedia</h2>
+            <img src="../img/CieloEstrellado.jpg"
+            alt="Cielo Estrellado"
+            width="300">
+            <img src="https://img.freepik.com/fotos-premium/cielo-nocturno-estrellado-encuentra-horizonte-hermoso-espacio-sol_777271-5371.jpg"
+            alt="Cielo Fantasia"
+            width="300">
+        </section>
+    </main>
+</body>
+</html>
