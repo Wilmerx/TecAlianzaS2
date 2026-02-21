@@ -3,5 +3,7 @@
     "liveServer.settings.multiRootWorkspaceName": "Programación Web y Móvil",
     "cSpell.words": [
         "telefono"
-    ]
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": []
 }
