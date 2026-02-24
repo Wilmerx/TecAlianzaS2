@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(38, 63, 63);
+    color: silver;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: shade-underline;
+}
+
+button {
+    background-color: darkgrey;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 120px;
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+footer #redes-sociales {
+    align-items: center;
+}
+
+footer #redes-sociales img {
+    margin-right: 5px;
+}
+
+footer #redes-sociales a {
+    margin-right: 20px;
+    font-size: 20px;
+}
