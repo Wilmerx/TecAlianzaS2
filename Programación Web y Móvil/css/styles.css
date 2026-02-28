@@ -1,9 +1,52 @@
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px auto 100px;
+    background-color: #f1f2f4;
+    color: #393A3C;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: wheat 0px 4px 8px 0px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+.nombreEmpresa {
+    color: #393A3C;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header .menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+header .servicios {
+    color: wheat;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2591D1;
+    border: #393A3C 2px solid;
+}
+
 body {
     background-color: rgb(38, 63, 63);
     color: silver;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
-    margin: 20px;
+    margin: 0px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 h1 {
@@ -14,7 +57,45 @@ h1 {
 
 a {
     color: inherit;
-    text-decoration: shade-underline;
+    text-decoration: underline;
+    
+}
+
+.inicio {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrusel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.flota {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.flota:hover {
+    transform: translateY(-5px);
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    margin: 20px;
 }
 
 button {
@@ -30,15 +111,15 @@ button:hover {
     background-color: lightgray;
 }
 
-footer #redes-sociales {
+footer .redes-sociales {
     align-items: center;
 }
 
-footer #redes-sociales img {
+footer .redes-sociales img {
     margin-right: 5px;
 }
 
-footer #redes-sociales a {
+footer .redes-sociales a {
     margin-right: 20px;
     font-size: 20px;
 }
