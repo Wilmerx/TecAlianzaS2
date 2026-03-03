@@ -1,7 +1,7 @@
 header {
     display: grid;
     align-items: center;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: auto auto auto;
     background-color: #f1f2f4;
     color: #393A3C;
     gap: 20px;
@@ -9,15 +9,16 @@ header {
     box-shadow: wheat 0px 4px 8px 0px;
 }
 
-header img {
+.logo {
     width: 200px;
     height: auto;
 }
 
 .nombreEmpresa {
-    color: #393A3C;
+    color: #2591d1;
     font-size: 36px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
 }
 
 header .menu {
@@ -27,16 +28,67 @@ header .menu {
 }
 
 header .servicios {
-    color: wheat;
+    color: black;
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
-    background-color: #2591D1;
-    border: #393A3C 2px solid;
+    background-color: white ;
+    border: darkgray 5px  ;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 14px;
+    font-family: none  ;
+    
+}
+
+header .formulario {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: darkgray 5px ;
+    border-radius: 10px;
+    margin:auto;
+    font-size: 14px;
+    font-family: none;
+
+}
+header .inicio{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: darkgray 5px ;
+    border-radius: 10px;
+    margin: auto;
+    font-family: none ;
+    font-size: 14px;
+    border-bottom: 3px solid #2591d1;
+    padding-bottom: 4px;
+}
+
+.formulario:hover, .servicios:hover {
+    background-color: lightgray;
+    color: black;
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+}
+
+header .inicio:hover {
+    background-color: lightgray;
+    color: black;
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+    border-bottom: 3px solid #124766;
 }
 
 body {
-    background-color: rgb(38, 63, 63);
+    background-color: rgb(3, 3, 56);
     color: silver;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
@@ -58,7 +110,6 @@ h1 {
 a {
     color: inherit;
     text-decoration: underline;
-    
 }
 
 .inicio {
@@ -70,7 +121,7 @@ a {
 
 .carrusel {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 360px);
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -81,8 +132,8 @@ a {
     border: 1px solid white;
     padding: 5px;
     border-radius: 5px;
-    width: 350px;
-    height: 200px;
+    width: 75%;
+    height: 75%;
     object-fit: contain;
 }
 

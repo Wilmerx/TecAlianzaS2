@@ -1,0 +1,104 @@
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    background-color: #f1f2f4;
+    color: #393A3C;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: wheat 0px 4px 8px 0px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+.nombreEmpresa {
+    color: #2591d1;
+    font-size: 36px;
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+header .menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+header .servicios {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: darkgray 5px ;
+    border-radius: 10px;
+    margin: auto;
+    font-family: none ;
+    font-size: 14px;
+    border-bottom: 3px solid #2591d1;
+    padding-bottom: 4px;
+}
+
+header .formulario {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: darkgray 5px ;
+    border-radius: 10px;
+    margin: auto;
+    font-family: none ;
+    font-size: 14px;
+}
+header .inicio{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: darkgray 5px ;
+    border-radius: 10px;
+    margin: auto;
+    font-family: none ;
+    font-size: 14px;
+}
+
+header .inicio:hover, header .formulario:hover {
+    background-color: lightgray;
+    color: black;
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+}
+
+.servicios:hover {
+    background-color: lightgray;
+    color: black;
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+    border-bottom: 3px solid #124766;
+}
+.flota {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.flota:hover {
+    transform: translateY(-5px);
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+}
