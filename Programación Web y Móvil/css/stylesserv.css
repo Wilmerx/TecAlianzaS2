@@ -6,7 +6,7 @@ header {
     color: #393A3C;
     gap: 20px;
     padding: 20px;
-    box-shadow: wheat 0px 4px 8px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header img {
@@ -17,7 +17,7 @@ header img {
 .nombreEmpresa {
     color: #2591d1;
     font-size: 36px;
-    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
 
@@ -30,15 +30,14 @@ header .menu {
 header .servicios {
     color: black;
     font-weight: bold;
-    font-size: large;
     text-decoration: none;
     padding: 10px 15px;
     background-color: white;
-    border: darkgray 5px ;
+    border: 2px solid darkgray;
     border-radius: 10px;
     margin: auto;
-    font-family: none ;
     font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 3px solid #2591d1;
     padding-bottom: 4px;
 }
@@ -46,31 +45,30 @@ header .servicios {
 header .formulario {
     color: black;
     font-weight: bold;
-    font-size: large;
     text-decoration: none;
     padding: 10px 15px;
     background-color: white;
-    border: darkgray 5px ;
+    border: 2px solid darkgray;
     border-radius: 10px;
     margin: auto;
-    font-family: none ;
     font-size: 14px;
-}
-header .inicio{
-    color: black;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: white;
-    border: darkgray 5px ;
-    border-radius: 10px;
-    margin: auto;
-    font-family: none ;
-    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header .inicio:hover, header .formulario:hover {
+header .inicio {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .inicio:hover, header .formulario:hover, header .servicios:hover {
     background-color: lightgray;
     color: black;
     border-color: lightgray;
@@ -78,100 +76,84 @@ header .inicio:hover, header .formulario:hover {
     cursor: pointer;
 }
 
+header .servicios:hover {
+    border-bottom: 3px solid #124766;
+}
+
+body {
+    background-color: #f1f2f4;
+    color: #393A3C;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 0;
+}
+
 main {
+    margin: 20px auto;
     padding: 20px;
-    background: linea;
-    color: #f1f2f4;
-    min-height: 400px;
+    background: linear-gradient(to bottom, #2591d1, #124766);
+    color: white;
+    min-height: 600px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .carrusel {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    justify-items: center;
 }
 
 .tarjeta {
     background-color: #2b2b2b;
     color: #f1f2f4;
-    padding: 12px;
+    padding: 20px;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .tarjeta img {
-    width: 50%;
+    width: 80%;
     height: auto;
     border-radius: 5px;
     object-fit: contain;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 15px;
 }
 
 .tarjeta .info p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.tarjeta1 {
-    grid-column: span 2;
-    grid-row: span 2;
+.tarjeta h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #2591d1;
 }
 
-.tarjeta2 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.tarjeta3 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.tarjeta4 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.tarjeta5 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.tarjeta6 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.tarjeta7 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.tarjeta8 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.tarjeta9 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.servicios:hover {
-    background-color: lightgray;
-    color: black;
-    border-color: lightgray;
-    box-shadow: 0 0 10px lightgray;
-    cursor: pointer;
-    border-bottom: 3px solid #124766;
-}
 .flota {
     border: 1px solid white;
-    padding: 1rem 2rem;
+    padding: 10px;
     border-radius: 5px;
     object-fit: contain;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flota:hover {
@@ -179,4 +161,163 @@ main {
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
     cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #f1f2f4;
+    color: #393A3C;
+    border-radius: 10px;
+}
+
+footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+footer .redes-sociales a {
+    color: #2591d1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    .nombreEmpresa {
+        font-size: 28px;
+    }
+
+    header .menu {
+        gap: 15px;
+    }
+
+    header .servicios,
+    header .formulario,
+    header .inicio {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .carrusel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .tarjeta {
+        padding: 15px;
+    }
+
+    .tarjeta img {
+        width: 70%;
+    }
+
+    .tarjeta h3 {
+        font-size: 20px;
+    }
+
+    .tarjeta .info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    header img {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .nombreEmpresa {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    header .menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    header .servicios,
+    header .formulario,
+    header .inicio {
+        padding: 8px 12px;
+        font-size: 12px;
+        width: 100%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    main {
+        margin: 10px auto;
+        padding: 10px;
+        min-height: 400px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .carrusel {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .tarjeta {
+        padding: 10px;
+    }
+
+    .tarjeta img {
+        width: 60%;
+    }
+
+    .tarjeta h3 {
+        font-size: 18px;
+    }
+
+    .tarjeta .info p {
+        font-size: 12px;
+    }
+
+    footer {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    footer .redes-sociales {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
 }
