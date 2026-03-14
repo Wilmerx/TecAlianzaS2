@@ -60,3 +60,4 @@ document.getElementById("btnSumar").addEventListener("click", sumarNumeros);
 document.getElementById("resultadoSumar");
 
 document.getElementById("btnParImpar").addEventListener("click", verificarParImpar);
+document.getElementById("resultadoParImpar");
