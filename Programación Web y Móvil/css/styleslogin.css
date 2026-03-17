@@ -58,21 +58,9 @@ header .inicio {
     transition: all 0.3s ease;
 }
 
-header .inicio {
-    border-bottom: 3px solid #2591d1;
-    padding-bottom: 4px;
-}
-
+header .inicio:hover,
 header .servicios:hover,
 header .formulario:hover {
-    background-color: lightgray;
-    color: black;
-    border-color: lightgray;
-    box-shadow: 0 0 10px lightgray;
-    cursor: pointer;
-}
-
-header .inicio:hover {
     background-color: lightgray;
     color: black;
     border-color: lightgray;
@@ -245,6 +233,10 @@ main {
     text-decoration: underline;
 }
 
+.validation-message {
+    color: red;
+    text-align: center;
+}
 
 .submit-btn {
     background: linear-gradient(to right, #2591d1, #124766);

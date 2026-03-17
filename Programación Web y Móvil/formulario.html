@@ -8,10 +8,18 @@
 </head>
 <body>
     <header>
-        <img src="img/Logo C&S Transportes SAS.jpg.jpeg" alt="Logo de la Empresa" >
+        <img src="img/Logo C&S Transportes SAS.jpg.jpeg" alt="Logo de la Empresa" class="logo">
         <h1>Registro de Usuarios</h1>
-        <p>Por favor, completa el siguiente formulario para registrarte, ¡pronto estaremos comunicándonos contigo para brindarte una mejor asesoría!:</p>
+        <nav class="menu">
+            <a href="index.html" class="inicio">Inicio</a>
+            <a href="formulario.html" class="formulario">Formulario</a>
+            <a href="servicios.html" class="servicios">Servicios</a>
+            <a href="login.html" class="login" id="btnLogin">Login</a>
+            <span id="usuarioActivo" class="usuario"></span>
+            <button id="btnLogout" class="logout" style="display: none;">Cerrar Sesión</button>
+        </nav>
     </header>
+    <p class="subtitle">Por favor, completa el siguiente formulario para registrarte, ¡pronto estaremos comunicándonos contigo para brindarte una mejor asesoría!:</p>
     <main>
         <form action="registro.html" method="post">
             <label for="nombre">Nombre:</label><br>
@@ -42,5 +50,7 @@
             <br><p>&copy; Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="js/login.js"></script>
 </body>
 </html>

@@ -26,7 +26,9 @@ header .menu {
     justify-content: center;
 }
 
-header .servicios {
+header .servicios,
+header .formulario,
+header .inicio {
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -37,21 +39,7 @@ header .servicios {
     margin: auto;
     font-size: 14px;
     font-family: none  ;
-    
-}
-
-header .formulario {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: white;
-    border: darkgray 5px ;
-    border-radius: 10px;
-    margin:auto;
-    font-size: 14px;
-    font-family: none;
-
+    transition: all 0.3s ease;
 }
 
 header .login {
@@ -68,28 +56,14 @@ header .login {
     font-family: none;
 }
 
-header .inicio{
-    color: black;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: white;
-    border: darkgray 5px ;
-    border-radius: 10px;
-    margin: auto;
-    font-family: none ;
-    font-size: 14px;
-    border-bottom: 3px solid #2591d1;
-    padding-bottom: 4px;
-}
-
-.formulario:hover, .servicios:hover {
+.formulario:hover, .servicios:hover, .inicio:hover {
     background-color: lightgray;
     color: black;
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
     cursor: pointer;
+    cursor: pointer;
+    border-bottom: 3px solid #124766;
 }
 
 header .login:hover {
@@ -99,13 +73,33 @@ header .login:hover {
     transform: translateY(-2px);
 }
 
-header .inicio:hover {
-    background-color: lightgray;
-    color: black;
-    border-color: lightgray;
-    box-shadow: 0 0 10px lightgray;
+header .logout {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: linear-gradient(to right, #d92541, #8b1538);
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-family: none;
     cursor: pointer;
-    border-bottom: 3px solid #124766;
+}
+
+header .logout:hover {
+    background: linear-gradient(to right, #8b1538, #d92541);
+    box-shadow: 0 0 10px rgba(217, 37, 65, 0.5);
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.usuario {
+    color: #124766;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
 body {
@@ -119,79 +113,6 @@ body {
 main {
     margin: 20px auto;
     padding: 20px;
-}
-
-@media (max-width: 1024px) {
-    header {
-        grid-template-columns: auto 1fr auto;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .logo {
-        width: 150px;
-    }
-
-    .nombreEmpresa {
-        font-size: 28px;
-    }
-
-    header .menu {
-        gap: 15px;
-    }
-
-    header .servicios,
-    header .formulario,
-    header .inicio,
-    header .login {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .logo {
-        width: 120px;
-        margin: 0 auto;
-    }
-
-    .nombreEmpresa {
-        font-size: 20px;
-        margin: 10px 0;
-    }
-
-    header .menu {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    header .servicios,
-    header .formulario,
-    header .inicio,
-    header .login {
-        padding: 8px 12px;
-        font-size: 12px;
-        width: 100%;
-        max-width: 200px;
-        margin: 5px auto;
-    }
-
-    main {
-        margin: 10px auto;
-        padding: 10px;
-    }
-
-    body {
-        font-size: 14px;
-    }
 }
 
 h1 {
@@ -305,6 +226,7 @@ a {
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 /* .botones_carrusel {
@@ -325,6 +247,7 @@ button {
 
 button:hover {
     background-color: lightgray;
+    transition: all 0.3s ease;
 }
 
 footer {
@@ -392,4 +315,77 @@ footer .redes-sociales img {
 footer .redes-sociales a {
     margin-right: 20px;
     font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .nombreEmpresa {
+        font-size: 28px;
+    }
+
+    header .menu {
+        gap: 15px;
+    }
+
+    header .servicios,
+    header .formulario,
+    header .inicio,
+    header .login {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .nombreEmpresa {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    header .menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    header .servicios,
+    header .formulario,
+    header .inicio,
+    header .login {
+        padding: 8px 12px;
+        font-size: 12px;
+        width: 100%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    main {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
 }

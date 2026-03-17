@@ -15,6 +15,8 @@
             <a href="index.html" class="inicio">Inicio</a>
             <a href="formulario.html" class="formulario">Formulario</a>
             <a href="servicios.html" class="servicios">Servicios</a>
+            <span id="usuarioActivo" class="usuario"></span>
+            <button id="btnLogout" class="logout" style="display: none;">Cerrar Sesión</button>
         </nav>
     </header>
 
@@ -27,18 +29,18 @@
 
             <form id="loginForm" class="login-form">
                 <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
+                    <label for="username">Nombre de Usuario</label>
                     <div class="input-wrapper">
                         <span class="input-icon">✉</span>
                         <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder="tu@correo.com"
+                            type="text" 
+                            id="username" 
+                            name="username" 
+                            placeholder="tu nombre de usuario"
                             required
                         >
                     </div>
-                    <span class="error-message" id="emailError"></span>
+                    <span class="error-message" id="usernameError"></span>
                 </div>
 
                 <div class="form-group">
@@ -65,6 +67,10 @@
                     <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
                 </div>
 
+                <div class="validation-message" id="validationMessage">
+                    <p id="validationText"></p>
+                </div>
+
                 <button type="submit" class="submit-btn">
                     <span class="btn-text">Iniciar Sesión</span>
                     <span class="btn-icon">→</span>
@@ -85,7 +91,7 @@
             </form>
 
             <div class="signup-link">
-                <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                <p>¿No tienes cuenta? <a href="formulario.html">Regístrate aquí</a></p>
             </div>
         </div>
 
