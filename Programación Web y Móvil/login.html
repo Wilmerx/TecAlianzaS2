@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleslogin.css">
+    <title>Login - Transportes Contreras</title>
+</head>
+<body>
+    <header>
+        <img src="./img/Logo C&S Transportes SAS.jpg.jpeg" alt="Transportes" class="logo">
+        <h1 class="nombreEmpresa">Transportes Contreras & Suarez</h1> 
+
+        <nav class="menu">
+            <a href="index.html" class="inicio">Inicio</a>
+            <a href="formulario.html" class="formulario">Formulario</a>
+            <a href="servicios.html" class="servicios">Servicios</a>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h2>Inicia Sesión</h2>
+                <p>Accede a tu cuenta de Transportes Contreras</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">✉</span>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="tu@correo.com"
+                            required
+                        >
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔒</span>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="••••••••"
+                            required
+                        >
+                        <span class="toggle-password" id="togglePassword">👁</span>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="remember-forgot">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span class="checkbox-text">Recuérdame</span>
+                    </label>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Iniciar Sesión</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+                <div class="divider">
+                    <span>O</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn google-btn" title="Google">
+                        <span>🔍 Google</span>
+                    </button>
+                    <button type="button" class="social-btn whatsapp-btn" title="WhatsApp">
+                        <span>💬 WhatsApp</span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="signup-link">
+                <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+            </div>
+        </div>
+
+        <div class="login-info">
+            <div class="info-card">
+                <h3>Beneficios de tu cuenta</h3>
+                <ul>
+                    <li>🚗 Reserva viajes fácilmente</li>
+                    <li>💳 Guarda tus métodos de pago</li>
+                    <li>📱 Seguimiento en tiempo real</li>
+                    <li>⭐ Acceso a ofertas exclusivas</li>
+                    <li>📞 Soporte prioritario 24/7</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Contacto</h3>
+            <ul>
+                <h4>Corporativo.</h4>
+                <li><a href="tel:3102302415">3102302415</a></li>
+                <h4>Luis Contreras</h4>
+                <li><a href="tel:3125230215">3125230215</a></li>
+            </ul>
+
+            <h4>Dirección</h4>
+            <ul>
+                <li><a href="https://maps.google.com/?q=Cra+84+%2367-23">Cra 84 #67 - 23</a></li>
+            </ul>
+
+            <h4>Correo</h4>
+            <div>
+                <ul>
+                    <li><a href="mailto:gerencia@cystransportes.com">gerencia@cystransportes.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="redes-sociales">
+            <h3>Síguenos</h3>
+            <img src="./img/instagram.png" alt="Logo Instagram" width="15"><a href="https://www.instagram.com/iam_sebas_cg?igsh=MWsyNXNpMmVoZGVldg==">Instagram</a>
+            <img src="./img/whatsapp.png" alt="Logo WhatsApp" width="15"><a href="https://wa.me/573102302415">Canal de WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -53,6 +53,21 @@ header .formulario {
     font-family: none;
 
 }
+
+header .login {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: linear-gradient(to right, #2591d1, #124766);
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-family: none;
+}
+
 header .inicio{
     color: black;
     font-weight: bold;
@@ -75,6 +90,13 @@ header .inicio{
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
     cursor: pointer;
+}
+
+header .login:hover {
+    background: linear-gradient(to right, #124766, #2591d1);
+    box-shadow: 0 0 10px rgba(37, 145, 209, 0.5);
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 header .inicio:hover {
@@ -120,7 +142,8 @@ main {
 
     header .servicios,
     header .formulario,
-    header .inicio {
+    header .inicio,
+    header .login {
         padding: 8px 12px;
         font-size: 12px;
     }
@@ -152,7 +175,8 @@ main {
 
     header .servicios,
     header .formulario,
-    header .inicio {
+    header .inicio,
+    header .login {
         padding: 8px 12px;
         font-size: 12px;
         width: 100%;
@@ -290,11 +314,6 @@ a {
     margin-top: 10px;
 } */
 
-footer {
-    padding: 20px;
-    margin: 20px;
-}
-
 button {
     background-color: darkgrey;
     color: black;
@@ -308,8 +327,62 @@ button:hover {
     background-color: lightgray;
 }
 
+footer {
+    background-color: #f1f2f4;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 2px solid #e0e0e0;
+}
+
+footer div:first-child {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    color: #2591d1;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    color: #124766;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #2591d1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #124766;
+    text-decoration: underline;
+}
+
 footer .redes-sociales {
+    display: flex;
     align-items: center;
+    gap: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+footer .redes-sociales h3 {
+    margin: 0;
 }
 
 footer .redes-sociales img {
@@ -318,5 +391,5 @@ footer .redes-sociales img {
 
 footer .redes-sociales a {
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 14px;
 }

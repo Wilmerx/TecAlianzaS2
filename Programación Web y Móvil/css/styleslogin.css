@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f2f4;
+    color: #393A3C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    background-color: #f1f2f4;
+    color: #393A3C;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.nombreEmpresa {
+    color: #2591d1;
+    font-size: 36px;
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+header .menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+header .servicios,
+header .formulario,
+header .inicio {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: darkgray 5px;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+header .inicio {
+    border-bottom: 3px solid #2591d1;
+    padding-bottom: 4px;
+}
+
+header .servicios:hover,
+header .formulario:hover {
+    background-color: lightgray;
+    color: black;
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+}
+
+header .inicio:hover {
+    background-color: lightgray;
+    color: black;
+    border-color: lightgray;
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer;
+    border-bottom: 3px solid #124766;
+}
+
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(37, 145, 209, 0.15);
+    animation: slideInLeft 0.6s ease;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    color: #2591d1;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #124766;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: #2591d1;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2591d1;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(37, 145, 209, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #bbb;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.toggle-password:hover {
+    transform: scale(1.2);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: -5px;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.form-group input.error {
+    border-color: #e74c3c;
+    background-color: #ffebee;
+}
+
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #2591d1;
+}
+
+.checkbox-text {
+    color: #666;
+    font-size: 13px;
+}
+
+.forgot-password {
+    color: #2591d1;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #124766;
+    text-decoration: underline;
+}
+
+
+.submit-btn {
+    background: linear-gradient(to right, #2591d1, #124766);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 145, 209, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(-1px);
+}
+
+.btn-icon {
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.divider span {
+    color: #999;
+    font-weight: bold;
+}
+
+
+.social-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.social-btn {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: white;
+    color: #393A3C;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+
+.social-btn:hover {
+    border-color: #2591d1;
+    background-color: #f5f9fc;
+    transform: translateY(-2px);
+}
+
+.google-btn:hover {
+    box-shadow: 0 5px 15px rgba(244, 67, 54, 0.2);
+}
+
+.whatsapp-btn:hover {
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
+}
+
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.signup-link p {
+    color: #666;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #2591d1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #124766;
+    text-decoration: underline;
+}
+
+
+.login-info {
+    background: linear-gradient(135deg, #2591d1, #124766);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(18, 71, 102, 0.2);
+    animation: slideInRight 0.6s ease;
+    height: fit-content;
+}
+
+.info-card h3 {
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-card li {
+    padding-left: 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.info-card li:nth-child(1) { animation-delay: 0.1s; }
+.info-card li:nth-child(2) { animation-delay: 0.2s; }
+.info-card li:nth-child(3) { animation-delay: 0.3s; }
+.info-card li:nth-child(4) { animation-delay: 0.4s; }
+.info-card li:nth-child(5) { animation-delay: 0.5s; }
+
+
+footer {
+    background-color: #f1f2f4;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 2px solid #e0e0e0;
+}
+
+footer div:first-child {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    color: #2591d1;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    color: #124766;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #2591d1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #124766;
+    text-decoration: underline;
+}
+
+footer .redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+footer .redes-sociales h3 {
+    margin: 0;
+}
+
+footer .redes-sociales img {
+    margin-right: 5px;
+}
+
+footer .redes-sociales a {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .nombreEmpresa {
+        font-size: 28px;
+    }
+
+    header .menu {
+        gap: 15px;
+    }
+
+    header .servicios,
+    header .formulario,
+    header .inicio {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .login-info {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .nombreEmpresa {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    header .menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    header .servicios,
+    header .formulario,
+    header .inicio {
+        padding: 8px 12px;
+        font-size: 12px;
+        width: 100%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .login-box {
+        padding: 25px;
+    }
+
+    .login-header h2 {
+        font-size: 24px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .social-login {
+        grid-template-columns: 1fr;
+    }
+
+    .login-info {
+        padding: 30px 20px;
+    }
+
+    .info-card h3 {
+        font-size: 20px;
+    }
+
+    .info-card li {
+        font-size: 14px;
+    }
+
+    footer div:first-child {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer .redes-sociales {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    .nombreEmpresa {
+        font-size: 18px;
+    }
+
+    header .servicios,
+    header .formulario,
+    header .inicio {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+
+    .login-header h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        padding: 10px 12px 10px 40px;
+    }
+
+    .submit-btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .login-info {
+        padding: 20px;
+    }
+
+    .info-card h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .info-card li {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
