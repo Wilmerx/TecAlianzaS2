@@ -43,6 +43,7 @@ header .menu {
     justify-content: center;
 }
 
+header .carrito,
 header .servicios,
 header .formulario,
 header .inicio {
@@ -60,7 +61,8 @@ header .inicio {
 
 header .inicio:hover,
 header .servicios:hover,
-header .formulario:hover {
+header .formulario:hover,
+header .carrito:hover {
     background-color: lightgray;
     color: black;
     border-color: lightgray;
@@ -388,12 +390,6 @@ main {
     gap: 12px;
     animation: fadeInUp 0.6s ease forwards;
 }
-
-.info-card li:nth-child(1) { animation-delay: 0.1s; }
-.info-card li:nth-child(2) { animation-delay: 0.2s; }
-.info-card li:nth-child(3) { animation-delay: 0.3s; }
-.info-card li:nth-child(4) { animation-delay: 0.4s; }
-.info-card li:nth-child(5) { animation-delay: 0.5s; }
 
 
 footer {

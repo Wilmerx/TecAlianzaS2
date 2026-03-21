@@ -12,30 +12,30 @@
         <h1>Registro de Usuarios</h1>
         <nav class="menu">
             <a href="index.html" class="inicio">Inicio</a>
-            <a href="formulario.html" class="formulario">Formulario</a>
             <a href="servicios.html" class="servicios">Servicios</a>
+            <a href="carrito.html" class="carrito">Carrito</a>
             <a href="login.html" class="login" id="btnLogin">Login</a>
             <span id="usuarioActivo" class="usuario"></span>
             <button id="btnLogout" class="logout" style="display: none;">Cerrar Sesión</button>
         </nav>
     </header>
-    <p class="subtitle">Por favor, completa el siguiente formulario para registrarte, ¡pronto estaremos comunicándonos contigo para brindarte una mejor asesoría!:</p>
+    <p class="subtitulo">Por favor, completa el siguiente formulario para registrarte, ¡pronto estaremos comunicándonos contigo para brindarte una mejor asesoría!:</p>
     <main>
         <form action="registro.html" method="post">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br><br>
 
-            <label for="telefono">Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono" required><br><br>
+            <label for="telefono">Teléfono</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono"><br><br>
 
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Correo Electrónico</label><br>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required><br><br>
 
-            <label for="password">Contraseña:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
+            <label for="password">Contraseña</label><br>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required><br><br>
 
 
-            <label for="fechaReserva">Fecha de Reserva:</label><br>
+            <label for="fechaReserva">Fecha de Reserva</label><br>
             <input type="date" id="fechaReserva" name="fechaReserva" required><br><br>
 
             <input type="submit" value="Registrar"><br><br>

@@ -3,9 +3,11 @@
     "liveServer.settings.multiRootWorkspaceName": "Programación Web y Móvil",
     "cSpell.words": [
         "Contáctanos",
+        "Numeros",
+        "opcion",
         "telefono"
     ],
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": [],
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5503
 }

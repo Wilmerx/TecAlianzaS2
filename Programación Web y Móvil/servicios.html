@@ -8,18 +8,19 @@
 </head>
 <body>
     <header>
-        <img src="./img/Logo C&S Transportes SAS.jpg.jpeg   " alt="Transportes" >
+        <img src="./img/Logo C&S Transportes SAS.jpg.jpeg" alt="Transportes" class="logo">
         <h1 class="nombreEmpresa">Transportes Contreras & Suarez</h1> 
 
         <nav class="menu">
             <a href="index.html" class="inicio">Inicio</a>
             <a href="formulario.html" class="formulario">Formulario</a>
-            <a href="servicios.html" class="servicios">Servicios</a>
+            <a href="carrito.html" class="carrito">Carrito</a>
             <a href="login.html" class="login" id="btnLogin">Login</a>
             <span id="usuarioActivo" class="usuario"></span>
             <button id="btnLogout" class="logout" style="display: none;">Cerrar Sesión</button>
         </nav>
     </header>
+    
     <main>
        <section class="inicio">
             <h3> Conoce nuestras flotas</h3>
@@ -27,78 +28,97 @@
                 <div class="tarjeta tarjeta1">
                     <img src="./img/LZM232.jpeg" alt="Flota LZM232" class="flota flota1">
                     <div class="info">
+                        <p>Placa: LZM232</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="LZM232" onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta2">
-                    <img src="./img/SPN970.jpeg" alt="Flota SPN970" class="flota flota2">
+                    <img src="./img/SPM609.jpeg" alt="Flota SPM609" class="flota flota5">
                     <div class="info">
+                        <p>Placa: SPM609</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="SPM609" onclick="agregarAlCarrito(2)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta3">
-                    <img src="./img/TDS155.jpeg" alt="Flota TDS155" class="flota flota3">
+                    <img src="./img/SPN970.jpeg" alt="Flota SPN970" class="flota flota2">
                     <div class="info">
+                        <p>Placa: SPN970</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="SPN970" onclick="agregarAlCarrito(3)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta4">
-                    <img src="./img/UFY540.jpeg" alt="Flota UFY540" class="flota flota4">
+                    <img src="./img/SZU878.jpeg" alt="Flota SZU878" class="flota flota9">
                     <div class="info">
+                        <p>Placa: SZU878</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="SZU878" onclick="agregarAlCarrito(4)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta5">
-                    <img src="./img/SPM609.jpeg" alt="Flota SPM609" class="flota flota5">
+                    <img src="./img/TDS155.jpeg" alt="Flota TDS155" class="flota flota3">
                     <div class="info">
+                        <p>Placa: TDS155</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="TDS155" onclick="agregarAlCarrito(5)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta6">
-                    <img src="./img/JTS452.jpeg" alt="Flota JTS452" class="flota flota6">
+                    <img src="./img/TZS937.jpeg" alt="Flota TZS937" class="flota flota8">
                     <div class="info">
+                        <p>Placa: TZS937</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="TZS937" onclick="agregarAlCarrito(6)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta7">
-                    <img src="./img/VEO798.jpeg" alt="Flota VEO798" class="flota flota7">
+                    <img src="./img/UFY540.jpeg" alt="Flota UFY540" class="flota flota4">
                     <div class="info">
+                        <p>Placa: UFY540</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="UFY540" onclick="agregarAlCarrito(7)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta8">
-                    <img src="./img/TZS937.jpeg" alt="Flota TZS937" class="flota flota8">
+                    <img src="./img/VEO798.jpeg" alt="Flota VEO798" class="flota flota7">
                     <div class="info">
+                        <p>Placa: VEO798</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="VEO798" onclick="agregarAlCarrito(8)">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="tarjeta tarjeta9">
-                    <img src="./img/SZU878.jpeg" alt="Flota SZU878" class="flota flota9">
+                    <img src="./img/JTS452.jpeg" alt="Flota JTS452" class="flota flota6">
                     <div class="info">
+                        <p>Placa: JTS452</p>
                         <p>Arrendamiento: $___</p>
                         <p>Máximo personas: ___</p>
                         <p>Detalles: ___</p>
+                        <button class="agregarCarrito" data-flota="JTS452" onclick="agregarAlCarrito(9)">Agregar al Carrito</button>
                     </div>
                 </div>
             </div> 
     </main>
 
     <script src="js/login.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>

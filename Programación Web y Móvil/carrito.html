@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/stylescarrito.css">
+</head>
+<body>
+    <header>
+        <img src="./img/Logo C&S Transportes SAS.jpg.jpeg" alt="Transportes" class="logo">
+        <h1 class="nombreEmpresa">Transportes Contreras & Suarez</h1> 
+
+        <nav class="menu">
+            <a href="index.html" class="inicio">Inicio</a>
+            <a href="formulario.html" class="formulario">Formulario</a>
+            <a href="servicios.html" class="servicios">Servicios</a>
+            <a href="login.html" class="login" id="btnLogin">Login</a>
+            <span id="usuarioActivo" class="usuario"></span>
+            <button id="btnLogout" class="logout" style="display: none;">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tu Carrito</h2>
+        <div id="carritoContainer"></div>
+        <section id="totalContainer">
+            <h2 id="total"></h2>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+        </section>
+    </main>
+
+
+    <script src="js/carrito.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
