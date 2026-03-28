@@ -2,10 +2,15 @@
     "cSpell.language": "en,es-ES",
     "liveServer.settings.multiRootWorkspaceName": "Programación Web y Móvil",
     "cSpell.words": [
+        "Accion",
+        "autopartes",
         "Contáctanos",
+        "descripcion",
         "Numeros",
         "opcion",
-        "telefono"
+        "Seccion",
+        "telefono",
+        "Vacio"
     ],
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": [],

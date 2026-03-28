@@ -15,21 +15,75 @@
             <a href="index.html" class="inicio">Inicio</a>
             <a href="formulario.html" class="formulario">Formulario</a>
             <a href="servicios.html" class="servicios">Servicios</a>
-            <a href="login.html" class="login" id="btnLogin">Login</a>
-            <span id="usuarioActivo" class="usuario"></span>
-            <button id="btnLogout" class="logout" style="display: none;">Cerrar Sesión</button>
+            <a href="login.html" class="login" id="btnLogin">Iniciar Sesión</a>
+            <span id="usuarioActivo" class="usuario" style="display: none"></span>
+            <button id="btnLogout" class="logout" style="display: none">Cerrar Sesión</button>
         </nav>
     </header>
 
     <main>
-        <h2>Tu Carrito</h2>
-        <div id="carritoContainer"></div>
-        <section id="totalContainer">
-            <h2 id="total"></h2>
-            <button id="vaciarCarrito">Vaciar Carrito</button>
+        <section class="carritoMain">
+            <div class="carritoHeader">
+                <h2>Tu Carrito de Servicios</h2>
+                <span id="contadorServicios" class="contador">0 servicios</span>
+            </div>
+            
+            <div id="carritoVacio" class="carritoVacio">
+                <p>Tu carrito está vacío</p>
+                <a href="servicios.html" class="btnComprar">Ver Servicios</a>
+            </div>
+
+            <div id="carritoContainer" class="tarjetasContainer"></div>
+
+            <section id="totalContainer" class="totalSection">
+                <div class="totalContent">
+                    <div class="detallesTotal">
+                        <div class="filaPrecio">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0</span>
+                        </div>
+                        <div class="filaPrecio">
+                            <span>IVA (19%):</span>
+                            <span id="iva">$0</span>
+                        </div>
+                        <div class="filaPrecio total">
+                            <span>Total:</span>
+                            <span id="total">$0</span>
+                        </div>
+                    </div>
+                    <div class="botonesAccion">
+                        <button id="vaciarCarrito" class="btnVaciar">🗑️ Vaciar Carrito</button>
+                        <!-- <button class="btnPagar">💳 Proceder a Pago</button> -->
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
+    <footer class="footerCarrito">
+        <div class="footerContent">
+            <div class="footerSeccion">
+                <h4>Transportes Contreras & Suarez</h4>
+                <p>Servicio de transporte de calidad y confianza</p>
+            </div>
+            <div class="footerSeccion">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footerSeccion">
+                <h4>Contacto</h4>
+                <p>📞 +57 (1) 1234-5678</p>
+                <p>✉️ info@transportes.com</p>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>&copy; 2026 Transportes Contreras & Suarez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="js/carrito.js"></script>
     <script src="js/login.js"></script>

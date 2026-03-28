@@ -30,11 +30,11 @@ header .menu {
 header .carrito,
 header .servicios,
 header .formulario{
-    color: black;
+    color: white;
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
-    background-color: white ;    
+    background: linear-gradient(to right, #124766, #2591d1);
     border: darkgray 5px  ;
     border-radius: 10px;
     margin: auto;
@@ -58,7 +58,7 @@ header .login {
 }
 
 .carrito:hover, .formulario:hover, .servicios:hover {
-    background-color: lightgray;
+    background: linear-gradient(to right, #2591d1, #124766);
     color: black;
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
@@ -100,7 +100,7 @@ header .logout:hover {
     color: #124766;
     font-weight: bold;
     font-size: 14px;
-    background-color: white;
+    background: linear-gradient(to right, #2591d1, #124766);
     padding: 40px 10px 5px;
     border-radius: 5px;
     border: 1px solid #2591d1;
@@ -266,7 +266,7 @@ footer {
     border-top: 2px solid #e0e0e0;
 }
 
-footer div:first-child {
+footer div {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 40px;
@@ -352,6 +352,11 @@ footer .redes-sociales a {
         padding: 8px 12px;
         font-size: 12px;
     }
+
+    footer div {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -396,5 +401,10 @@ footer .redes-sociales a {
 
     body {
         font-size: 14px;
+    }
+
+    footer div {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }

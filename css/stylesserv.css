@@ -36,11 +36,11 @@ header .menu {
 header .inicio,
 header .carrito,
 header .formulario{
-    color: black;
+    color: white;
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
-    background-color: white ;
+    background: linear-gradient(to right, #2591d1, #124766);
     border: darkgray 5px  ;
     border-radius: 10px;
     margin: auto;

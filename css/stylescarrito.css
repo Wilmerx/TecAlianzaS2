@@ -5,13 +5,11 @@
 }
 
 body {
-    background-color: #f1f2f4;
-    color: #393A3C;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
@@ -22,7 +20,6 @@ header {
     color: #393A3C;
     gap: 20px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -35,6 +32,7 @@ header {
     font-size: 36px;
     font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
+    cursor: default;
 }
 
 header .menu {
@@ -43,30 +41,20 @@ header .menu {
     justify-content: center;
 }
 
+header .inicio,
 header .servicios,
-header .formulario,
-header .inicio {
-    color: black;
+header .formulario{
+    color: white;
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
-    background-color: white;
-    border: darkgray 5px;
+    background: linear-gradient(to right, #124766, #2591d1);
+    border: darkgray 5px  ;
     border-radius: 10px;
     margin: auto;
     font-size: 14px;
+    font-family: none  ;
     transition: all 0.3s ease;
-}
-
-header .inicio:hover,
-header .servicios:hover,
-header .formulario:hover {
-    background-color: lightgray;
-    color: black;
-    border-color: lightgray;
-    box-shadow: 0 0 10px lightgray;
-    cursor: pointer;
-    border-bottom: 3px solid #124766;
 }
 
 header .login {
@@ -83,11 +71,11 @@ header .login {
     font-family: none;
 }
 
-.formulario:hover, .servicios:hover, .inicio:hover {
-    background-color: lightgray;
+.inicio:hover, .formulario:hover, .servicios:hover {
+    background: linear-gradient(to right, #2591d1, #124766);
     color: black;
     border-color: lightgray;
-    box-shadow: 0 0 10px lightgray;
+    box-shadow: 0 0 10px rgba(37, 145, 209, 0.5);
     cursor: pointer;
     cursor: pointer;
     border-bottom: 3px solid #124766;
@@ -126,7 +114,7 @@ header .logout:hover {
     color: #124766;
     font-weight: bold;
     font-size: 14px;
-    background-color: white;
+    background: linear-gradient(to right, #2591d1, #124766);
     padding: 40px 10px 5px;
     border-radius: 5px;
     border: 1px solid #2591d1;
@@ -136,3 +124,363 @@ header .logout:hover {
     background-repeat: no-repeat;
     background-position: center 8px;
 }
+
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.carritoMain {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carritoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2591d1;
+}
+
+.carritoHeader h2 {
+    color: #124766;
+    font-size: 32px;
+    margin: 0;
+}
+
+.contador {
+    background: linear-gradient(to right, #124766, #2591d1);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.carritoVacio {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.carritoVacio p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btnComprar {
+    display: inline-block;
+    background: linear-gradient(to right, #124766, #2591d1);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btnComprar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(37, 145, 209, 0.3);
+}
+
+
+.tarjetasContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.tarjetaServicio {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaServicio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(37, 145, 209, 0.2);
+}
+
+.imagenServicio {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e0e7f0 100%);
+}
+
+.imagenServicio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detallesServicio {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.nombreServicio {
+    color: #124766;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.precioServicio {
+    color: #2591d1;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descripcionServicio {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.botonesServicio {
+    display: flex;
+    gap: 10px;
+}
+
+.btnEliminar {
+    flex: 1;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.btnEliminar:hover {
+    background: #ee5a52;
+    transform: scale(1.02);
+}
+
+.btnDetalles {
+    flex: 1;
+    background: linear-gradient(to right, #124766, #2591d1);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.btnDetalles:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(37, 145, 209, 0.3);
+}
+
+
+.totalSection {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.totalContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.detallesTotal {
+    flex: 1;
+    min-width: 250px;
+}
+
+.filaPrecio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e7f0;
+    color: #666;
+    font-size: 15px;
+}
+
+.filaPrecio span:first-child {
+    font-weight: 600;
+}
+
+.filaPrecio span:last-child {
+    color: #333;
+}
+
+.filaPrecio.total {
+    border-bottom: none;
+    border-top: 2px solid #2591d1;
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #124766;
+}
+
+.botonesAccion {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex: 1;
+    min-width: 250px;
+}
+
+.btnVaciar {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btnVaciar:hover {
+    background: #e68900;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.btnPagar {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btnPagar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+}
+
+
+.footerCarrito {
+    background: linear-gradient(135deg, #124766 0%, #0d2d45 100%);
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: auto;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footerSeccion h4 {
+    color: #2591d1;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.footerSeccion p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #b0c4d4;
+    margin-bottom: 8px;
+}
+
+.footerSeccion ul {
+    list-style: none;
+}
+
+.footerSeccion ul li {
+    margin-bottom: 8px;
+}
+
+.footerSeccion ul li a {
+    color: #b0c4d4;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.footerSeccion ul li a:hover {
+    color: #2591d1;
+    padding-left: 5px;
+}
+
+.footerBottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(37, 145, 209, 0.2);
+    color: #b0c4d4;
+    font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .carritoHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .carritoHeader h2 {
+        font-size: 24px;
+    }
+
+    .tarjetasContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .totalContent {
+        flex-direction: column;
+    }
+
+    .botonesAccion {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .botonesAccion button {
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .detallesTotal {
+        width: 100%;
+    }
+}
+

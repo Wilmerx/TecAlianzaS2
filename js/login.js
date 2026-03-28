@@ -56,3 +56,4 @@ if (btnLogout) {
         window.location.href = "index.html";
     });
 }
+
