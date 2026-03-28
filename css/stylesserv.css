@@ -106,7 +106,15 @@ header .logout:hover {
     color: #124766;
     font-weight: bold;
     font-size: 14px;
-    margin-left: 20px;
+    background-color: white;
+    padding: 40px 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #2591d1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: url('../img/usuario.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center 8px;
 }
 
 body {

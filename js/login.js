@@ -29,7 +29,8 @@ const btnLogin = document.getElementById("btnLogin");
 const btnLogout = document.getElementById("btnLogout");
 
 if (usuarioActivo && textoUsuario) {
-    textoUsuario.textContent = "¡Hola, " + usuarioActivo + "!";
+    textoUsuario.innerHTML = '¡Hola, ' + usuarioActivo + '!';
+    textoUsuario.style.display = "inline";
     
     if (btnLogin) {
         btnLogin.style.display = "none";
@@ -43,6 +44,15 @@ if (usuarioActivo && textoUsuario) {
 if (btnLogout) {
     btnLogout.addEventListener("click", function() {
         sessionStorage.removeItem("usernameInput");
+        if (textoUsuario) {
+            textoUsuario.style.display = "none";
+        }
+        if (btnLogin) {
+            btnLogin.style.display = "inline";
+        }
+        if (btnLogout) {
+            btnLogout.style.display = "none";
+        }
         window.location.href = "index.html";
     });
 }

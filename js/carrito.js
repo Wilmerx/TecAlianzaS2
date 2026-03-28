@@ -66,5 +66,4 @@ function vaciarCarrito() {
 
 mostrarCarrito();
 
-// Agregar event listener para el botón vaciar carrito
 document.getElementById("vaciarCarrito").addEventListener("click", vaciarCarrito);
