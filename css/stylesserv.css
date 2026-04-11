@@ -65,7 +65,6 @@ header .login {
 
 header .inicio:hover, header .carrito:hover, header .formulario:hover {
     background-color: lightgray;
-    color: black;
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
     cursor: pointer;
@@ -251,37 +250,30 @@ main h3 {
 }
 
 footer {
-    padding: 30px;
-    margin: 20px;
-    text-align: center;
-    background-color: #f1f2f4;
-    color: #393A3C;
-    border-radius: 10px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #0d2d45;
+    padding: 20px;
     margin-top: auto;
+    border-top: 2px solid #e0e0e0;
 }
 
 footer div:first-child {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 footer h3 {
     color: #2591d1;
     font-size: 16px;
-    margin-bottom: 12px;
-    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 footer h4 {
-    color: #124766;
+    color: wheat;
     font-size: 14px;
-    margin-top: 12px;
-    margin-bottom: 8px;
-    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 footer ul {
@@ -289,54 +281,38 @@ footer ul {
 }
 
 footer li {
-    margin: 6px 0;
+    margin: 5px 0;
 }
 
 footer a {
     color: #2591d1;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 14px;
 }
 
 footer a:hover {
     color: #124766;
     text-decoration: underline;
-    transform: translateX(2px);
-    display: inline-block;
 }
 
 footer .redes-sociales {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
-    border-top: 2px solid #e0e0e0;
+    border-top: 1px solid #ddd;
     padding-top: 20px;
-    margin-top: 20px;
 }
 
 footer .redes-sociales h3 {
-    margin: 0 20px 0 0;
-    font-size: 16px;
+    margin: 0;
 }
 
 footer .redes-sociales img {
-    width: 20px;
-    height: 20px;
     margin-right: 5px;
-    transition: all 0.3s ease;
-}
-
-footer .redes-sociales img:hover {
-    transform: scale(1.2);
 }
 
 footer .redes-sociales a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: 0 15px;
+    margin-right: 20px;
     font-size: 14px;
 }
 

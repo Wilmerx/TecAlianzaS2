@@ -59,7 +59,6 @@ header .login {
 
 .carrito:hover, .formulario:hover, .servicios:hover {
     background: linear-gradient(to right, #2591d1, #124766);
-    color: black;
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
     cursor: pointer;
@@ -260,13 +259,13 @@ button:hover {
 }
 
 footer {
-    background-color: #f1f2f4;
+    background-color: #0d2d45;
     padding: 20px;
     margin-top: auto;
     border-top: 2px solid #e0e0e0;
 }
 
-footer div {
+footer div:first-child {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 40px;
@@ -280,7 +279,7 @@ footer h3 {
 }
 
 footer h4 {
-    color: #124766;
+    color: wheat;
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 5px;

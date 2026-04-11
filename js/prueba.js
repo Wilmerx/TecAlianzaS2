@@ -116,6 +116,41 @@ const jugar = (opcionUsuario) => {
     }
 }
 
+let grupos = [];
+let turnos = [1, 2, 3, 4, 5, 6, 7];
+let indice = 0;
+
+const ingresarGrupos = () => {
+    for (let i = 1; i <= 7; i++) {
+        const grupo = prompt("Ingresa el nombre del grupo " + i + ":");
+        grupos.push(grupo);
+        let elemento = document.createElement("li");
+        elemento.textContent = grupo;
+        document.getElementById("listaGrupos").appendChild(elemento);
+
+        if (i == 7) {
+            document.getElementById("ingresoGrupos").style.display = "none";
+        }
+    }
+};
+
+const asignarTurno = () => {
+    if (indice == 7) {
+        alert("Todos los grupos han sido asignados a un turno.");
+        return;
+    }
+
+    let r = Math.floor(Math.random() * turnos.length);
+
+    let turnoAsignado = turnos.splice(r, 1)[0];
+
+    let elemento = document.createElement("li");
+    elemento.textContent = turnoAsignado + " - " + grupos[indice];
+    document.getElementById("resultadoSorteo").appendChild(elemento);
+
+    indice++;
+}
+
 document.getElementById("btnContar").addEventListener("click", contarHastaNumero);
 document.getElementById("resultadoContar");
 

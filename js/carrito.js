@@ -1,6 +1,6 @@
 const servicios = [
     {
-        id: 1, nombre: "LZM232", precio: 1000, img: "img/LZM232.jpeg", descripcion: "Camión de carga ligera con capacidad de 5 toneladas"},
+        id: 1, nombre: "LZM232", precio: 1, img: "img/LZM232.jpeg", descripcion: "Camión de carga ligera con capacidad de 5 toneladas"},
     {
         id: 2, nombre: "SPM609", precio: 1000, img: "img/SPM609.jpeg", descripcion: "Camión de carga mediana con capacidad de 8 toneladas"},
     {

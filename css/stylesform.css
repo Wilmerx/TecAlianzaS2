@@ -185,9 +185,69 @@ input[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
-.copy {
-    display: block;
-    color: #888888;
+footer {
+    background-color: #0d2d45;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 2px solid #e0e0e0;
+}
+
+footer div:first-child {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    color: #2591d1;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    color: #124766;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #2591d1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #124766;
+    text-decoration: underline;
+}
+
+footer .redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+footer .redes-sociales h3 {
+    margin: 0;
+}
+
+footer .redes-sociales img {
+    margin-right: 5px;
+}
+
+footer .redes-sociales a {
+    margin-right: 20px;
+    font-size: 14px;
 }

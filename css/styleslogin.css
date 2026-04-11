@@ -65,7 +65,6 @@ header .servicios:hover,
 header .formulario:hover,
 header .carrito:hover {
     background-color: lightgray;
-    color: black;
     border-color: lightgray;
     box-shadow: 0 0 10px lightgray;
     cursor: pointer;

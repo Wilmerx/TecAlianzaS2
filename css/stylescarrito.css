@@ -73,7 +73,6 @@ header .login {
 
 .inicio:hover, .formulario:hover, .servicios:hover {
     background: linear-gradient(to right, #2591d1, #124766);
-    color: black;
     border-color: lightgray;
     box-shadow: 0 0 10px rgba(37, 145, 209, 0.5);
     cursor: pointer;
@@ -391,62 +390,71 @@ main {
 }
 
 
-.footerCarrito {
-    background: linear-gradient(135deg, #124766 0%, #0d2d45 100%);
-    color: white;
-    padding: 40px 20px 20px;
+footer {
+    background-color: #0d2d45;
+    padding: 20px;
     margin-top: auto;
+    border-top: 2px solid #e0e0e0;
 }
 
-.footerContent {
-    max-width: 1200px;
-    margin: 0 auto;
+footer div:first-child {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 30px;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    margin-bottom: 20px;
 }
 
-.footerSeccion h4 {
+footer h3 {
     color: #2591d1;
     font-size: 16px;
-    margin-bottom: 12px;
-    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.footerSeccion p {
-    font-size: 13px;
-    line-height: 1.8;
-    color: #b0c4d4;
-    margin-bottom: 8px;
+footer h4 {
+    color: #124766;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.footerSeccion ul {
+footer ul {
     list-style: none;
 }
 
-.footerSeccion ul li {
-    margin-bottom: 8px;
+footer li {
+    margin: 5px 0;
 }
 
-.footerSeccion ul li a {
-    color: #b0c4d4;
+footer a {
+    color: #2591d1;
     text-decoration: none;
-    font-size: 13px;
     transition: all 0.3s ease;
 }
 
-.footerSeccion ul li a:hover {
-    color: #2591d1;
-    padding-left: 5px;
+footer a:hover {
+    color: #124766;
+    text-decoration: underline;
 }
 
-.footerBottom {
-    text-align: center;
+footer .redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #ddd;
     padding-top: 20px;
-    border-top: 1px solid rgba(37, 145, 209, 0.2);
-    color: #b0c4d4;
-    font-size: 12px;
+}
+
+footer .redes-sociales h3 {
+    margin: 0;
+}
+
+footer .redes-sociales img {
+    margin-right: 5px;
+}
+
+footer .redes-sociales a {
+    margin-right: 20px;
+    font-size: 14px;
 }
 
 
